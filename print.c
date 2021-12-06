@@ -2,7 +2,7 @@
 
 void Print()
 {
-    printf("Hello Mit!\n");
+    printf("Hello world!\n");
 }
 
 void PrintNum(int val)

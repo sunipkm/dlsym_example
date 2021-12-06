@@ -100,14 +100,14 @@ void tstfn TestUnloadDLL()
 
 int main()
 {
-    bool res = TestLoadDLL("/home/sunip/code/dlsym_test/libprint.so");
+    bool res = TestLoadDLL("./libprint.so");
     printf("Load: %d\n\n", res);
     TestPrint();
     TestPrintNum(20);
     TestUnloadDLL();
     printf("Change library, compile, press any key to continue: ");
     getchar();
-    res = TestLoadDLL("/home/sunip/code/dlsym_test/libprint.so");
+    res = TestLoadDLL("./libprint.so");
     printf("Load: %d\n\n", res);
     TestPrint();
     TestPrintNum(20);
